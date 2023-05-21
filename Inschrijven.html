@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inschrijven</title>
+</head>
+<body>
+
+<h1>Inschrijven Nieuwsbrief</h1>
+<p>Hier kun je je inschrijven op onze nieuwsbroef om op de hoogte te blijven van pannenkoeken updates</p>
+
+<form onsubmit="hier-hebben-we-javascript-voor-nodig">
+   <!-- alle invoervelden staan hier! -->
+
+    <!-- Input elementen -->
+    <p>Dit is een tekstveld</p>
+    <input type="text" />
+
+    <p>Dit is een emailveld</p>
+    <input type="email" />
+
+    <p>Dit is een wachtwoordveld</p>
+    <input type="password" />
+
+    <p>Dit is een checkbox</p>
+    <input type="checkbox" />
+
+    <p>Dit is een radiobutton</p>
+    <input type="radio" />
+
+    <p>Dit is een slider</p>
+    <input type="range" />
+
+    <p>Dit is een nummeriek veld</p>
+    <input type="number" />
+
+    <p>Dit is een datumveld</p>
+    <input type="date" />
+
+    <p>Dit is een bestandsupload</p>
+    <input type="file" />
+
+    <p>Dit is een kleurkiezer</p>
+    <input type="color" />
+
+    <!-- Labels -->
+    <p>Dit emailveld heeft een placeholder en verplicht minimaal 10 karakters</p>
+    <input type="email" placeholder="Bijvoorbeeld test@gmail.com" minLength="10" />
+
+    <p>Deze checkbox staat permanent aan</p>
+    <input type="checkbox" checked="true"/>
+
+    <p>Dit is een tekstveld met een ingevulde waarde</p>
+    <input type="text" value="Ik heb een ingevulde waarde!"/>
+
+    <p>Dit is een nummeriek veld waarin de gebruiker alleen waardes tussen 5 en 10 mogen invullen</p>
+    <input type="number" min="5" max="10" />
+
+    <!-- label en input los van elkaar -->
+    <label for="user-email-field">Email:</label>
+    <input type="email" id="user-email-field"/>
+
+    <!-- label en input genest -->
+    <label for="user-newsletter-field">
+        <input type="checkbox" id="user-newsletter-field" />
+        Ik wil de nieuwsbrief ontvangen
+    </label>
+
+    <!-- Name attribute -->
+    <label for="name-field">Naam</label>
+    <input type="text" id="name-field" name="name"/>
+
+    <label for="dob-field">Geboortedatum</label>
+    <input type="date" id="dob-field" name="dob"/>
+
+    <label for="birthplace-field">Geboorteplaats</label>
+    <input type="text" id="birthplace-field" name="birthplace"/>
+
+    <!-- Value attribute radiobutton / checkbox -->
+    <p>Kies een tortilla:</p>
+    <label for="whole-weat-radio">
+        <input type="radio" id="whole-weat-radio" value="whole-weat-tortilla" name="type"/>
+        Meergranen
+    </label>
+
+    <label for="normal-radio">
+        <input type="radio" id="normal-radio" value="normal-tortilla" name="type" />
+        Normaal
+    </label>
+
+    <p>Kies toppings:</p>
+    <label for="cheese-checkbox">
+        <input type="checkbox" id="cheese-checkbox" value="cheese-topping" name="toppings"/>
+        Kaas
+    </label>
+
+    <label for="avocado-checkbox">
+        <input type="checkbox" id="avocado-checkbox" value="avocado-topping" name="toppings" />
+        Avocado
+    </label>
+
+    <label for="salsa-checkbox">
+        <input type="checkbox" id="salsa-checkbox" value="salsa-topping" name="toppings" />
+        Salsa
+    </label>
+
+    <!-- Buttons -->
+    <button type="reset">Annuleren</button>
+    <button type="submit">Verzenden</button>
+
+</form>
+
+</body>
+</html>
